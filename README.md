@@ -7,11 +7,11 @@
 
 Puedes descargar este repositorio de 3 formas:
 
-- 1.1. Descargar repositorio manualmente. [Ver como hacerlo aquí](https://github.com/taller-R/lectures_r/blob/main/pics/download.gif)
+- 1.1. Descargar repositorio manualmente. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/pics/download.gif)
 
-- 1.2. Crear proyecto con versión de control de Git. [Ver como hacerlo aquí](https://github.com/taller-R/lectures_r/blob/main/pics/crear_proyecto.gif)
+- 1.2. Crear proyecto con versión de control de Git. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/pics/crear_proyecto.gif)
 
-- 1.3. Clonar el repositorio desde la terminal. [Ver como hacerlo aquí](https://github.com/taller-R/lectures_r/blob/main/pics/terminal.gif)
+- 1.3. Clonar el repositorio desde la terminal. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/pics/terminal.gif)
 
 Nota: Para hacerlo de las formas **1.2.** o **1.3.** debe verificar si ya tiene instalado [Git](https://git-scm.com/downloads) en su equipo. Puedes verificar la versión de [Git](https://git-scm.com/downloads) escribiendo la siguiente línea de código `git --version` sobre la terminal de tu equipo.
 
@@ -19,7 +19,7 @@ Nota: Para hacerlo de las formas **1.2.** o **1.3.** debe verificar si ya tiene 
 
 * ***Módulo 1:*** Introducción al entorno de trabajo de R
 
-  + ***clase-01:*** Introducción a R.[aquí](https://github.com/taller-R/lectures_r/tree/main/lecture_1)
+  + ***clase-01:*** Introducción a R. [[Ver presentación aquí]](https://github.com/taller-R/lectures_r/tree/main/lecture_1)[[Ver vídeo aquí]]()
 
   + ***clase-02:*** Rstudio y GitHub.
   
