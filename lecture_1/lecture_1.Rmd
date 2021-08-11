@@ -25,11 +25,13 @@ output:
 # load packages
 library(pacman)
 p_load(here,knitr,tidyverse,ggthemes)
+knitr::opts_knit$set(root.dir = getwd())
 
 # option html
 options(htmltools.dir.version = FALSE)
 opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=T)
 ```
+
 
 ## Hoy veremos
 
@@ -58,11 +60,15 @@ opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=T)
 <!--------------------->
 ## Acerca del curso
 
-* GitHub: [https://github.com/taller-R](https://github.com/taller-R)
+* **GitHub:** [https://github.com/taller-R](https://github.com/taller-R)
 
-* Slack: [https://slack.com](https://slack.com/intl/es-co/)
+* **Slack:** [https://slack.com](https://slack.com/intl/es-co/)
 
-* Microsoft Teams: [Equipo de trabajo Taller de R, ECON-1302](https://www.microsoft.com/es-co/microsoft-teams/download-app)
+* **Microsoft Teams:** [Equipo de trabajo Taller de R, ECON-1302](https://www.microsoft.com/es-co/microsoft-teams/download-app)
+
+* **Horario de clases:** Miércoles de 05:00 PM - 06:15 PM
+
+* **Horario de atención:** Viernes de 03:00 PM - 04:00 PM
 
 <!--------------------->
 ## Acerca de mí
@@ -112,6 +118,16 @@ El curso está dividido en 6 módulos:
 | Task 2 (Módulo 3) | 15% |
 | Task 3 (Módulos 4, 5, 6) | 40% |
 | Participación activa en el curso: | 15% |
+
+<!--------------------->
+## Fechas importantes
+
+* **Inicio de clases:** 9 de agosto.
+* **Semana de receso:** 4-9 de octubre.  
+* **Fecha de entrega del 30% de las notas en MiBanner:** 15 de octubre.
+* **Último día de clases:** 4 de diciembre.
+* **Último día para solicitar retiros:** 17 de diciembre.
+* **Último día para subir notas finales en MiBanner:** 16 de diciembre. 
 
 <!--------------------->
 ## Cuando completes este curso...
@@ -222,18 +238,31 @@ Version 4.0.3. para [Windows](https://cran.r-project.org/bin/windows/base/) o [L
 <!--------------------->
 ## Instalar RStudio (Mac)
 
+![](pics/install_rstudio_mac.gif)
 
 <!--------------------->
 ## Instalar RStudio (Windows)
 
+![](pics/install_rstudio_windows.gif)
+<!--------------------->
+
+## Isntalar Git (Mac)
+
+* Ir a la terminal de su equipo (puede hacerlo desde Rstudio) e instalar [Homebrew](https://brew.sh/index_es) (seguir instrucciones). 
+
+* Después que termina de instalarse *Homebrew*, usted puede instalar **Git** copiando y pegando esta linea de código en la terminal:
+`brew install git`
+
+<img src="pics/install_git_mac.png" width="800" height="300">
 
 <!--------------------->
-## Instalar Git (Mac)
 
-
-<!--------------------->
 ## Instalar Git (Windows)
 
+Debe descargar el instalador de [git bash](https://git-scm.com/download/win) (Git for Windows Setup de 32-bit o 64-bit), hacer clic en instalar y seguir las instrucciones de instalación.
+
+
+![](pics/install_git_windows.png)
 
 <!--------------------->
 ## Configurar la cuenta de Git en el equipo
