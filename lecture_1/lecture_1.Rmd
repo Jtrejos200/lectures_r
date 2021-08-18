@@ -35,13 +35,13 @@ opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=T)
 
 ## Hoy veremos
 
-* [1.] Prólogo
+* [[1.] Prólogo]()
 
-* [2.] Syllabus
+* [[2.] Syllabus]()
 
-* [3.] ¿Usar R?
+* [[3.] ¿Usar R?]()
 
-* [4.] Configuración inicial
+* [[4.] Configuración inicial]()
    
   * [4.1.] Instalar R y Rstudio
      
@@ -54,7 +54,7 @@ opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=T)
 <!---    Prólogo    --->
 <!--------------------->
 
-# 1. Prólogo
+# [1.] Prólogo
 <html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
 
 <!--------------------->
@@ -85,7 +85,7 @@ opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=T)
 <!--------------------->
 <!---    Syllabus   --->
 <!--------------------->
-# 2. Syllabus
+# [2.] Syllabus
 
 <html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
 
@@ -140,7 +140,7 @@ El curso está dividido en 6 módulos:
 <!--------------------->
 <!---    Usar R?    --->
 <!--------------------->
-# 3. ¿Usar R?
+# [3.] ¿Usar R?
 <html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
 
 R es un entorno de programacion libre que fue desarrollado en el año 1993 por Robert Gentleman y Ross Ihaka del Departamento de Estadística de la Universidad de Auckland.
@@ -194,15 +194,15 @@ Ver: [*The Popularity of Data Science Software*](http://r4stats.com/articles/pop
 
 - **Librerías y funciones**
 
-  - Se usan funciones para crear y editar objetos.
+  - Se usan funciones para crear, editar, transformar o eliminar objetos.  
 
-  - Generalmente las funciones que necesitamos ya  han sido escritas por otros colaboradores en paquetes o librerías que debemos "llamar" cada vez que se vayan a usar.
+  - La mayoría de las funciones que vamos a necesitar ya fueron escritas por otros colaboradores en paquetes o librerías que debemos "llamar" cada vez que se vayan a usar.
 
 <!--------------------->
 <!--- Configuración --->
 <!--------------------->
 
-# 4. Configuración inicial
+# [4.] Configuración inicial
 
 <html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
 

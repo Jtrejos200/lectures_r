@@ -1,0 +1,329 @@
+---
+pagetitle: "Lecture 2"
+title: "\nTaller de R: Estadística y programación\n"
+subtitle: "\nLectura 2: Rstudio y GitHub\n"
+author: "\nEduard F. Martínez-González\n"
+date: "Universidad de los Andes | [ECON-1302](https://github.com/taller-R)"
+output: 
+  revealjs::revealjs_presentation:  
+    theme: simple 
+    highlight: tango
+    center: true
+    nature:
+      transition: slide
+      self_contained: false # para que funcione sin internet
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+      showSlideNumber: 'all'
+    seal: true # remover la primera diapositiva (https://github.com/yihui/xaringan/issues/84)
+    # Help 1: https://revealjs.com/presentation-size/  
+    # Help 2: https://bookdown.org/yihui/rmarkdown/revealjs.html
+    # Estilos revealjs: https://github.com/hakimel/reveal.js/blob/master/css/theme/template/theme.scss
+---
+```{r setup, include=FALSE}
+# load packages
+library(pacman)
+p_load(here,knitr,tidyverse,ggthemes)
+knitr::opts_knit$set(root.dir = getwd())
+
+# option html
+options(htmltools.dir.version = FALSE)
+opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=T)
+```
+
+# Hoy veremos
+
+* [[1.] R y Rstudio](#github)
+
+  * [1.1.] Interfaz
+
+  * [1.2.] Sintaxis
+
+  * [1.3.] Librerías
+
+* [[2.] Git y GitHub]()
+
+   * [2.1.] Qué es Git y GitHub?
+   
+   * [2.2.] Flujo de trabajo
+
+* [[3.] Clonar un repositorio]()
+
+<!--------------------->
+<!--- Configuración --->
+<!--------------------->
+
+# [1.] R y Rstudio
+
+<html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
+
+[RStudio](https://rstudio.com) es un entorno de desarrollo integrado (IDE) para el lenguaje de programación [R](https://www.r-project.org). En un lenguaje más practico, Rstudio brinda una interfaz más amigable que R, permitiendo una experiencia de aprendizaje más placentera.
+
+<!--------------------->
+## Workflow en R
+
+![](pics/workflow_R.png)
+
+Tomado de: R para principiantes.
+
+<!--------------------->
+## Interfaz R
+
+![](pics/interfaz_r.png)
+<!--------------------->
+
+## Interfaz Rstudio
+
+<div align="center">
+<img src="https://2.bp.blogspot.com/-8cS_-ByUIbY/WhPODv_o-YI/AAAAAAAADnM/KQlXRcCrgAM3OWYVMTsZQ7CqpMlZcmPiQCLcBGAs/s640/introductionrstudio.jpg" height=500 width=1000>
+</div>
+Tomado de: [https://2.bp.blogspot.com](https://2.bp.blogspot.com)
+
+<!--------------------->
+## Cambiar la apariencia de Rstudio
+
+![](pics/change_apparence.gif)
+
+<!--------------------->
+## Sintaxis en R
+
+Como crear un objeto debes:
+
+```{bash eval=FALSE}
+nombre_objeto + asignar + funcion()
+```
+
+* Una forma de hacerlo: 
+
+```{bash eval=FALSE}
+datos <- rnorm(n = 10 , mean = 50 , sd = 10)
+```
+
+* Otra forma de hacerlo: 
+
+```{bash eval=FALSE}
+data = rnorm(n = 10 , mean = 40 , sd = 10)
+```
+
+<!--------------------->
+## Entorno de R:
+
+El entorno de trabajo de R almacena temporalmente los objetos que se crean durante una sesión. El espacio de trabajo puede ser guardado o no al momento de cerrar la sesión. 
+
+![](pics/environment.gif)
+
+<!--------------------->
+## Funciones:
+
+Las funciones permiten crear, editar, transformar o eliminar objetos. Estan contenidas en librerías. Y cada función contiene alemnos 1 argumento.
+
+![](pics/funciones.gif)
+<!--------------------->
+
+## Decoding messages
+
+Estas notificaciones se muestran sobre la consola y pueden generarse después de aplicar una función.
+
+* [Warning]() y [message](): sugiere que hay detalles de la función que debemos tener en cuenta (no se detiene la ejecución de la función).
+
+* [Error](): se genera cuando ocurrió un error importante causando que la función no continue ejecutándose.
+
+<div align="center">
+<img src="pics/decoding_messages.png" height=200 width=800>
+</div>
+
+<!--------------------->
+
+## Editor de sintaxis:
+
+<small>El editor de código o editor de sintaxis nos permite escribir las instrucciones que queremos ejecutar en R. Para ejecutarlas debemos sombrear toda la linea que queremos ejecutar y orpimir las teclas [Control]() + [Enter]() o haciendo clik en [run](). </small>
+
+<div align="center">
+<img src="pics/editor_sintaxis.png" height=500 width=800>
+</div>
+
+<!--------------------->
+## Librerías
+
+Em R se pueden gestionar más de 17.000 librerías disponibles en el cran y otras miles más disponibles en GitHub. Para gestionar las librerias en R debemos:
+
+![](pics/install_lib.gif)
+
+<!--------------------->
+<!---    gitHub    --->
+<!--------------------->
+
+# [2.] Git y GitHub
+
+<html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
+
+<!--------------------->
+## Qué es Git?
+
+- Git es un sistema de control de versiones distribuido. 
+
+- Bien, intente esto: Imagínese si Dropbox y la función "Seguimiento de cambios" en MS Word tuvieran un bebé. Git sería ese bebé.
+
+- De hecho, es incluso mejor que eso porque Git está optimizado para las cosas en las que los economistas y los científicos de datos pasan mucho tiempo trabajando (por ejemplo, el código).
+
+- Hay una curva de aprendizaje, pero les prometo que vale la pena.
+
+
+<!--------------------->
+## ... y GitHub?
+
+- Es importante darse cuenta de que Git y GitHub son cosas distintas.
+
+- GitHub es una plataforma de alojamiento en línea que proporciona una variedad de servicios integrados en el sistema Git. (Las plataformas similares incluyen Bitbucket y GitLab).
+
+<!--------------------->
+## Workflow en GitHub
+
+<div align="center">
+<img src="https://gcapes.github.io/swc-pr-tutorial/fig/push-pull.svg" height=500>
+</div>
+
+<!--------------------->
+## Trabajo colaborativo en GitHub
+
+<div align="center">
+<img src="pics/colaborative.png" height=500>
+</div>
+
+<!--------------------->
+## Trabajar en un repositorio de GitHub
+
+<div align="center">
+<img src="https://d33wubrfki0l68.cloudfront.net/a0e9a2797777e7dc0e9944f9aa08d2755b331c56/c4824/post/2017-08-23-a-git-workflow-for-ecologists_files/figure-html/prepare-repo-1.png" height=500>
+</div>
+
+<!--------------------->
+## Antes de trabajar en un repositorio local..
+
+<div align="center">
+<img src="https://d33wubrfki0l68.cloudfront.net/2cb3e3ff5f784c1040f4cea75cf366fc88d0a189/d5e22/post/2017-08-23-a-git-workflow-for-ecologists_files/figure-html/create-branch-1.png" height=500>
+</div>
+
+<!--------------------->
+## Después de trabajar en un repositorio local..
+
+<div align="center">
+<img src="https://d33wubrfki0l68.cloudfront.net/bba7142ce38b41e3ac77ed8b58340f0dd9fdce56/5622f/post/2017-08-23-a-git-workflow-for-ecologists_files/figure-html/commit-1.png" height=500>
+</div>
+
+<!--------------------->
+## Usando Git...
+
+<div align="center">
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--R0DkWatL--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/frx76vz2f2c9y0c1pwth.png" height=500>
+</div>
+
+<!--------------------->
+<!--- Clonar un repositorio --->
+<!--------------------->
+
+# [3.] Clonar un repositorio
+
+<html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
+
+<!--------------------->
+
+## Crear un repositorio en GitHub
+
+![](pics/make_repo.gif)
+
+<!--------------------->
+
+## Crear un proyecto en Rstudio (...)
+
+**☑** Si el repositorio no está en tu cuenta, puedes crear una copia en tu cuenta (fork), para que puedas editarlo.
+
+**☑** Copiar el enlace HTTPS
+
+**☑** Abrir una sesión de Rstudio
+
+**☑** Crear una versión de control de Git en tu equipo
+
+**☑** Abrir el proyecto
+
+<!--------------------->
+
+## Crear un proyecto en Rstudio (...)
+
+![](pics/clone_repo.gif)
+
+<!--------------------->
+
+## De mi repositorio local a GitHub (...)
+
+Primero seleccionamos los archivos que queremos subir a  GitHub. Para eso escribimos sobre la temrinal:
+
+```{bash eval=FALSE}
+git add -A
+```
+
+Posteriormente se etiqueta los cambios hechos en un comentario:
+
+```{bash eval=FALSE}
+git commit -m "Escribir comentario"
+```
+
+Finalmente se suben los cambios al repositorio online:
+
+```{bash eval=FALSE}
+git push
+```
+
+<!--------------------->
+
+## De mi repositorio local a GitHub (...)
+
+![](pics/git_push.gif)
+
+<!--------------------->
+<!---    Hoy vimos  --->
+<!--------------------->
+
+# Gracias
+<html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
+
+
+<!--------------------->
+##  Hoy vimos...
+
+☑ Interfaz de Rstudio
+
+☑ Decoding messages en RStudio
+
+☑ Sintaxis de R
+
+☑ Librerías
+
+☑ Flujo de trabajo en Git
+
+
+
+
+
+
+
+
+
+
+<!--- HTML style --->
+<style type="text/css">
+.reveal .progress {background: #CC0000 ; color: #CC0000}
+.reveal .controls {color: #CC0000}
+.reveal h1.title {font-size: 3.0em;color: #CC0000; font-weight: bolde}
+.reveal h1.subtitle {font-size:2.0em ; color:#000000}
+.reveal section h1 {font-size:2.0em ; color:#CC0000 ; font-weight:bolder ; vertical-align:middle}
+.reveal section h2 {font-size:1.6em ; color:#CC0000 ; font-weight:bolde ; text-align:left}
+.reveal section h3 {font-size:1.5em ; color:#00000 ; font-weight:bolde ; text-align:left}
+.reveal section h4 {font-size:1.3em ; color:#00000 ; font-weight:bolde ; text-align:left}
+.reveal section p {font-size:0.9em ; color:#00000 ; text-align:left}
+.reveal section a {font-size:0.9em ; color:#000099 ; text-align:left}
+.reveal ul {list-style-type:disc ; font-size:1.1em ; color:#00000 ; display: block;}
+.reveal ul ul {list-style-type: square; font-size:0.9em ; display: block;}
+.reveal ul ul ul {list-style-type: circle; font-size:0.9em ; display: block;}
+</style>
