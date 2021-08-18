@@ -19,9 +19,9 @@ Nota: Para hacerlo de las formas **1.2.** o **1.3.** debe verificar si ya tiene 
 
 * ***Módulo 1:*** Introducción al entorno de trabajo de R
 
-  + ***clase-01:*** Introducción a R. [[Ver presentación aquí]](https://github.com/taller-R/lectures_r/tree/main/lecture_1) - [[Ver vídeo aquí]]()
+  + ***clase-01:*** Introducción a R. [[Ver presentación aquí]](https://github.com/taller-R/lectures_r/tree/main/lecture_1) - [[Ver vídeo aquí]](https://uniandes.sharepoint.com/sites/Section_20212029291/Documentos%20compartidos/General/Recordings/Clase%201-20210811_170740-Grabaci%C3%B3n%20de%20la%20reuni%C3%B3n.mp4?web=1)
 
-  + ***clase-02:*** Rstudio y GitHub.
+  + ***clase-02:*** Rstudio y GitHub. [[Ver presentación aquí]](https://github.com/taller-R/lectures_r/tree/main/lecture_2) - [[Ver vídeo aquí]]()
   
   + ***clase-03:*** Estructuras de datos en R.
   
