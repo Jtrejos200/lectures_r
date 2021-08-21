@@ -7,11 +7,11 @@
 
 Puedes descargar este repositorio de 3 formas:
 
-- 1.1. Descargar repositorio manualmente. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/pics/download.gif)
+- 1.1. Descargar repositorio manualmente. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/lecture_1/pics/download.gif)
 
-- 1.2. Crear proyecto con versión de control de Git. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/pics/crear_proyecto.gif)
+- 1.2. Crear proyecto con versión de control de Git. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/lecture_1/pics/crear_proyecto.gif)
 
-- 1.3. Clonar el repositorio desde la terminal. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/pics/terminal.gif)
+- 1.3. Clonar el repositorio desde la terminal. [[Ver como hacerlo aquí]](https://github.com/taller-R/lectures_r/blob/main/lecture_1/pics/terminal.gif)
 
 Nota: Para hacerlo de las formas **1.2.** o **1.3.** debe verificar si ya tiene instalado [Git](https://git-scm.com/downloads) en su equipo. Puedes verificar la versión de [Git](https://git-scm.com/downloads) escribiendo la siguiente línea de código `git --version` sobre la terminal de tu equipo.
 

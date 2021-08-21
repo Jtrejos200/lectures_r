@@ -119,6 +119,9 @@ El entorno de trabajo de R almacena temporalmente los objetos que se crean duran
 Las funciones permiten crear, editar, transformar o eliminar objetos. Estan contenidas en librerías. Y cada función contiene alemnos 1 argumento.
 
 ![](pics/funciones.gif)
+* Agregar captura con información de sessionInfo
+* Agregar capture con funcion ejecutandose  (cuando aparece stop sobre la consola)
+
 <!--------------------->
 
 ## Decoding messages
@@ -132,6 +135,8 @@ Estas notificaciones se muestran sobre la consola y pueden generarse después de
 <div align="center">
 <img src="pics/decoding_messages.png" height=200 width=800>
 </div>
+
+* Agregar capture con comando no terminaod (cuando aparece + en la consola)
 
 <!--------------------->
 
