@@ -136,7 +136,7 @@ Estas notificaciones se muestran sobre la consola y pueden generarse después de
 <img src="pics/decoding_messages.png" height=200 width=800>
 </div>
 
-* Agregar capture con comando no terminaod (cuando aparece + en la consola)
+**Agregar capture con comando no terminaod (cuando aparece + en la consola)**
 
 <!--------------------->
 
