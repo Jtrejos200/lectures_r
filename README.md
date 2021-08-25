@@ -23,7 +23,7 @@ Nota: Para hacerlo de las formas **1.2.** o **1.3.** debe verificar si ya tiene 
 
   + ***clase-02:*** Rstudio y GitHub. [[Ver presentación aquí]](https://github.com/taller-R/lectures_r/tree/main/lecture_2) - [[Ver vídeo aquí]]()
   
-  + ***clase-03:*** Estructuras de datos en R.
+  + ***clase-03:*** Estructuras de datos en R. [[Ver presentación aquí]](https://github.com/taller-R/lectures_r/tree/main/lecture_3) - [[Ver vídeo aquí]]() - [[Ver códigos aquí]](https://github.com/taller-R/data_r/tree/master/data_3)
   
 * ***Módulo 2:*** Tidyverse
 
