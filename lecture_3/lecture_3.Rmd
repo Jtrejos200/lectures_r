@@ -21,7 +21,7 @@ output:
     # Help 2: https://bookdown.org/yihui/rmarkdown/revealjs.html
     # Estilos revealjs: https://github.com/hakimel/reveal.js/blob/master/css/theme/template/theme.scss
 ---
-```{r setup, include=FALSE}
+```{r setup, include=F , cache=F}
 # load packages
 library(pacman)
 p_load(here,knitr)
@@ -33,17 +33,55 @@ opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=F)
 
 ## Hoy veremos
 
-### **[1.]** Directorio de trabajo y entorno de R
+### **[1.]** Preparar repositorio
 
-### **[2.]** Tipo de datos 
+### **[2.]** Directorio de trabajo y entorno de R
 
-### **[3.]** Estructuras de datos en R
+### **[3.]** Tipo de datos 
+
+### **[4.]** Estructuras de datos en R
+
 
 <!----------------------------->
 <!--- Directorio de trabajo --->
 <!----------------------------->
 
-# [1.] Directorio de trabajo
+# [1.] Sincronizar el repositorio
+
+<html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
+
+<!----------------------------->
+## Git pull origin (...)
+
+![](pics/git_pull_origin.png)
+
+Tomado de:[https://stackoverflow.com/questions](https://stackoverflow.com/questions/3903817/pull-new-updates-from-original-github-repository-into-forked-github-repository)
+
+<!----------------------------->
+## Git pull origin (...)
+
+Ver documentación de git [aquí](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
+```{r,eval=F,include=T}
+# Ver repositorios remotos configurados
+git remote -v
+
+# Agregar la ruta al repositorio de origen
+git remote add upstream https://github.com/count_otigin/repo_origin.git
+
+# Ver los nuevos repositorios remotos
+git remote -v
+
+# actualizar cambios
+git fetch upstream
+git merge upstream/main
+```
+
+<!----------------------------->
+<!--- Directorio de trabajo --->
+<!----------------------------->
+
+# [2.] Directorio de trabajo
 
 <html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
 
@@ -70,7 +108,7 @@ setwd('ruta al nuevo directorio de trabajo')
 <!----------------------------- Tipo de datos --------------------------------->
 <!----------------------------------------------------------------------------->
 
-# [2.] Tipo de datos
+# [3.] Tipo de datos
 
 <html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
 
@@ -121,7 +159,7 @@ puedo consultar el tipo de datos que contiene un objeto usando la función `is()
 <!---------------------------Estructuras de datos------------------------------>
 <!----------------------------------------------------------------------------->
 
-# [3.] Estructura de datos
+# [4.] Estructura de datos
 <html><div style='float:left'></div><hr color='#000099' size=3px width=850px></html>
 
 ## Estructura de datos

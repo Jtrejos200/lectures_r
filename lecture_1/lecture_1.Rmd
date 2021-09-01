@@ -29,7 +29,7 @@ knitr::opts_knit$set(root.dir = getwd())
 
 # option html
 options(htmltools.dir.version = FALSE)
-opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=T)
+opts_chunk$set(fig.align="center", fig.height=4 , dpi=300 , cache=F)
 ```
 
 
